@@ -12,7 +12,7 @@ import os
 # Загрузка изображения с правильным путем (raw-строка для Windows)
 img_path = r'C:\Job\MLE\Segmentation-of-images-by-graph-methods\Geodesic MST\img\photo_1_2025-06-24_16-17-16.jpg'
 if not os.path.exists(img_path):
-    raise FileNotFoundError(f"Image not found at {img_path}")
+    raise FileNotFoundError(f"Изображение не найдено в {img_path}")
     
 img = io.imread(img_path)
 img = img_as_float(img)
